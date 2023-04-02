@@ -1,0 +1,295 @@
+/* APP WIDE */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+
+/* unsure what this is doing/ trying to do, ask Dom */
+/* html {
+    font-size: 100%;
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+body {
+    background-color: var(--backgroundcolor);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+/* DRY */
+:root {
+    --maincolor: #00171F;
+    --backgroundcolor: #FFFAFF;
+    --linkcolor: #FC5130;
+}
+
+.paragraph {
+    margin-bottom: 0.5rem;
+    line-height: 1.6; 
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.primary-header {
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.secondary-header {
+    font-weight: 300;
+    font-size: 2rem;
+
+}
+
+.tertiary-header {
+    font-weight: 200;
+    font-size: 1.375rem;
+    margin-bottom: 0.3125rem;
+}
+
+
+/* NAV BAR */
+.nav-bar {
+    background-color: var(--maincolor);
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar__container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.nav-bar__ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 -0.625rem 1.25rem 
+}
+
+.nav-bar__links {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.25rem 0.9375rem;
+}
+
+.nav-bar__links:hover {
+    cursor: pointer;
+    background-color: rgb(79, 79, 79);
+    transition: all ease .5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar__links {
+      font-size: .75rem;
+    }
+  }
+
+
+/* HOME PAGE */
+
+.header-container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.codeclan-link {
+    text-decoration: none;
+    color: #4DA2CC;
+}
+
+.codeclan-link:hover {
+    color: #1d4153;
+}
+
+.codeclan-link:visited {
+    color: #4DA2CC;
+}
+
+.github-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.375rem;
+    color: white;
+    padding: 0.25rem;
+    background-color: var(--maincolor);
+    border-radius: 2px;
+}
+
+.github-link:hover {
+    background-color: var(--linkcolor);
+    transition: all ease 1s;
+}
+
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.projects-container__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+/* .video-container {
+    text-align: center;
+} */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: var(--maincolor);
+    margin-top: 3.125rem;
+}
+
+/* .footer__container {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.footer__ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+
+.image-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.125rem;
+}
+
+.image-container__main-image {
+    width: 50%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+/* SOCIALS BUTTONS */
+.fa {
+    padding: 1.25rem;
+    font-size: 1.875rem;
+    width: 1.875rem;
+    text-align: center;
+    text-decoration: none;
+    background: #55acee00;
+    color: white;
+    /* border: 1px solid white; */
+    border-radius: 2px;
+}
+
+
+
+
+
+
+/* CONTACT */
+.container-contact {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.contact-links {
+    font-weight: 200;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--linkcolor);
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-links {
+      font-size: 2rem;
+    }
+  }
+
+.contact-links:visited {
+    color: var(--linkcolor);
+}
+.contact-links:hover {
+    font-weight: 400;
+}
+.contact-links:active {
+    color: var(--linkcolor);
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin:hover {
+    color: #1466C2;
+    transition: all ease .3s;
+}
+
+.fa-google:hover {
+    color: #D13D30;
+    transition: all ease .3s;
+}
+
+.fa-github:hover {
+    color: #2EA043;
+    transition: all ease .3s;
+}
+
