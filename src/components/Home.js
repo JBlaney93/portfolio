@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import headshot from '../images/headshot.jpg';
 
 
 const Home = () => {
@@ -27,6 +28,8 @@ const Home = () => {
                     I have recently graduated from the Professional Software Development course
                     at <a href="https://codeclan.com/" className="codeclan-link">CodeClan</a> in Glasgow.
                 </p>
+
+                {/* <div className="headshot-container"><img src={headshot} alt="" className="headshot"></img></div> */}
             </article>
         </div>
     )
