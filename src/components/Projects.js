@@ -1,6 +1,4 @@
 import React from "react";
-import styled from 'styled-components';
-// import './Projects.css';
 import tt_countries_pic from '../images/travel-tracker-countries.png';
 import tt_memories_pic from '../images/travel-tracker-memories.png';
 
