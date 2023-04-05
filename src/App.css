@@ -308,3 +308,6 @@ footer {
     transition: all ease .3s;
 }
 
+hr{
+    color: rgba(0, 0, 0, 0.486);
+}

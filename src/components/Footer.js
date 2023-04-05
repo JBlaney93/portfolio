@@ -20,9 +20,9 @@ const Footer = () => {
                         <li>
                             <a href="https://github.com/JBlaney93" class="fa fa-github"></a>
                         </li>
-                        {/* <li>
-                            <a href="jamesblaneydev@gmail.com" class="fa fa-google"></a>
-                        </li> */}
+                        <li>
+                            <a href="mailto:james@blaney.dev" class="fa fa-google"></a>
+                        </li>
                     </ul>
                     <FooterText>©JamesBlaney2023</FooterText>
                 </nav>

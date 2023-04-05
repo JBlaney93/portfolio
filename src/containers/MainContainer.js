@@ -15,8 +15,8 @@ const MainContainer = () => {
                     <NavBar />
                     <div className="container">
                         <Routes>
-                            <Route path="/" element={ <Home /> }/>
-                            <Route path="/jblaney-portfolio" element={ <Home /> }/>
+                            <Route path="/" element={ <Projects />  }/>
+                            <Route path="/home" element={ <Home /> }/>
                             <Route path="/contact" element={ <Contact /> }/>
                             <Route path="/projects" element={ <Projects /> }/>
                         </Routes>
