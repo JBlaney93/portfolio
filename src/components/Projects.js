@@ -3,9 +3,24 @@ import tt_countries_pic from '../images/travel-tracker-countries.png';
 import tt_memories_pic from '../images/travel-tracker-memories.png';
 
 
-const PythonProjects = () => {
+const Projects = () => {
     return (
         <div>
+                    <div className="about-me-container">
+            <header className="header-container header-container-home">
+                <h1 className="primary-header">
+                    JAMES BLANEY
+                </h1>
+                    <h2 className="secondary-header">
+                        SOFTWARE DEVELOPER 
+                    </h2>
+                            <a href="https://github.com/JBlaney93" className="github-link">
+                                GitHub
+                            </a>
+            </header>
+            </div>
+
+
             <div className="header-container">
                 <h1 className="primary-header">
                     PROJECTS
@@ -39,6 +54,10 @@ const PythonProjects = () => {
                             something that was completely new to us.
                             The backend was built using Java and Spring with a PostgreSQL database.
                         </p>
+                        <p className="paragraph">
+                            RISE is a budget tracking application aimed at young adults to help educate
+                            them about responsible money management. 
+                        </p>
                     </article>
 
                      <div className="video-container">
@@ -54,7 +73,7 @@ const PythonProjects = () => {
                     </div>
 
                 </div>
-
+            <hr></hr>
                 <div className="projects-container__item">
                     <h2 className="secondary-header">
                         PowerPong League
@@ -96,6 +115,7 @@ const PythonProjects = () => {
                     </div>
 
                 </div>
+                <hr></hr>
 
                 <div className="projects-container__item">
                     <h2 className="secondary-header">
@@ -143,4 +163,4 @@ const PythonProjects = () => {
     )
 }
 
-export default PythonProjects;
+export default Projects;
