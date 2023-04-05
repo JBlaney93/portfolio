@@ -6,18 +6,18 @@ import tt_memories_pic from '../images/travel-tracker-memories.png';
 const Projects = () => {
     return (
         <div>
-                    <div className="about-me-container">
-            <header className="header-container header-container-home">
+            <div className="about-me-container">
+                <header className="header-container header-container-home">
                 <h1 className="primary-header">
                     JAMES BLANEY
                 </h1>
-                    <h2 className="secondary-header">
+                <h2 className="secondary-header">
                         SOFTWARE DEVELOPER 
-                    </h2>
-                            <a href="https://github.com/JBlaney93" className="github-link">
+                </h2>
+                <a href="https://github.com/JBlaney93" className="github-link-main">
                                 GitHub
-                            </a>
-            </header>
+                </a>
+                </header>
             </div>
 
 
