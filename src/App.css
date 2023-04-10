@@ -12,6 +12,8 @@ body {
     flex-direction: column;
     --nav-load-time: 300ms;
     --nav-link-load-time: 500ms;
+    --header-load-delay: 800ms;
+    --h1-load-delay: 1100ms;
 }
 
 main {
@@ -39,6 +41,22 @@ main {
 .header-container {
     text-align: center;
     margin-bottom: 1.5rem;
+    animation: title-load 300ms ease-in var(--h1-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+@keyframes title-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .primary-header {
@@ -189,6 +207,22 @@ nav li:last-child {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    animation: header-load 300ms ease-in var(--header-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+@keyframes header-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .codeclan-link {
@@ -253,6 +287,22 @@ nav li:last-child {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    animation: proj-load 300ms ease-in 1500ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+@keyframes proj-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .projects-container__item {
