@@ -1,8 +1,6 @@
-/* APP WIDE */
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
 }
 
 body {
@@ -26,7 +24,6 @@ main {
 }
 
 
-/* DRY */
 :root {
     --maincolor: #00171F;
     --backgroundcolor: #FFFAFF;
